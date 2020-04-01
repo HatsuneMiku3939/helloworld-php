@@ -1,8 +1,0 @@
-FROM nginxinc/nginx-unprivileged:1.16
-
-# copy conf.d
-COPY conf.d/nginx.conf /etc/nginx/nginx.conf
-
-# copy application source
-WORKDIR /var/app
-COPY . .

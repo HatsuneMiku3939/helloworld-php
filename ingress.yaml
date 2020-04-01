@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: helloworld-php-ingress
+spec:
+  rules:
+  - host: 12ca460b.ngrok.io
+    http:
+      paths:
+      - backend:
+          serviceName: helloworld-php
+          servicePort: 80
